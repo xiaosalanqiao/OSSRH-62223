@@ -2,7 +2,10 @@
 buildscript {
     repositories {
         google()
-        jcenter()
+//        jcenter()
+        maven { url "https://maven.aliyun.com/repository/public" }
+        maven { url "https://maven.aliyun.com/repository/google" }
+        maven { url "https://dl.bintray.com/bingoogolapple/maven" }
     }
     dependencies {
         classpath "com.android.tools.build:gradle:4.0.1"
@@ -14,8 +17,14 @@ buildscript {
 
 allprojects {
     repositories {
+//        google()
+//        jcenter()
+        maven { url "https://maven.aliyun.com/repository/public" }
+        maven { url "https://maven.aliyun.com/repository/google" }
+        maven { url "https://jitpack.io" }
+        maven { url "https://dl.bintray.com/bingoogolapple/maven" }
+        maven { url "https://dl.bintray.com/vplus/android-viewplus" }
         google()
-        jcenter()
     }
 }
 
